@@ -23,7 +23,6 @@ composer require justoverclock/events-countdown:"*"
 
 ```sh
 composer update justoverclock/events-countdown:"*"
-php flarum migrate
 php flarum cache:clear
 ```
 
