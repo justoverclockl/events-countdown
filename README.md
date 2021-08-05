@@ -26,5 +26,4 @@ php flarum cache:clear
 ## Links
 
 - [Packagist](https://packagist.org/packages/justoverclock/events-countdown)
-- [GitHub](https://github.com/justoverclock/events-countdown)
-- [Discuss](https://discuss.flarum.org/d/PUT_DISCUSS_SLUG_HERE)
+- [GitHub](https://github.com/justoverclockl/events-countdown)
