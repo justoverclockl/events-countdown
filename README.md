@@ -1,6 +1,6 @@
 # Events Countdown Widget
 
-![License](https://img.shields.io/badge/license-MIT-blue.svg) [![Latest Stable Version](https://img.shields.io/packagist/v/justoverclock/events-countdown.svg)](https://packagist.org/packages/justoverclock/events-countdown) [![Total Downloads](https://img.shields.io/packagist/dt/justoverclock/events-countdown.svg)](https://packagist.org/packages/justoverclock/events-countdown)
+![License](https://img.shields.io/badge/license-MIT-blue.svg) [![Latest Stable Version](https://poser.pugx.org/justoverclock/events-countdown/v)](https://packagist.org/packages/justoverclock/events-countdown) [![Total Downloads](https://poser.pugx.org/justoverclock/events-countdown/downloads)](https://packagist.org/packages/justoverclock/events-countdown)
 
 A [Flarum](http://flarum.org) extension. Add an Events Countdown widget to Flarum
 
