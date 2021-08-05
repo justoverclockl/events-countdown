@@ -4,6 +4,9 @@
 
 A [Flarum](http://flarum.org) extension. Add an Events Countdown widget to Flarum
 
+![e8Uo3lrDBN](https://user-images.githubusercontent.com/79002016/128338336-6afed6b5-aacc-4e02-9208-958982555c56.gif)
+
+
 ## Installation
 
 Install with composer:
