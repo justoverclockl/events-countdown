@@ -51,7 +51,7 @@ export default class EventsCountDown extends Widget {
     }
 
     className() {
-        return 'EventsCountDown-widget';
+        return 'EventsCountDown-widget AfruxWidgets-Widget--flat';
     }
 
     icon() {
