@@ -1,0 +1,59 @@
+.EventsCountDown-widget {
+  #clockdiv {
+    font-family: sans-serif;
+    color: #fff;
+    display: inline-block;
+    font-weight: 100;
+    text-align: center;
+    font-size: 30px;
+  }
+
+
+  #clockdiv > div {
+    padding: 10px;
+    border-radius: 3px;
+    background: #e8ecf3;
+    display: inline-block;
+  }
+
+  #clockdiv div > span {
+    padding: 15px;
+    border-radius: 3px;
+    background: rgba(83, 149, 195, 0.5);
+    display: inline-block;
+  }
+
+  .smalltext {
+    padding-top: 5px;
+    font-size: 16px;
+    color: @primary-color;
+  }
+  .cntdwn-widget {
+      width: 170px;
+      margin: 0px 40px;
+    }
+  .countdown-container {
+    text-align: center;
+  }
+}
+.AfruxWidgets-Widget-content {
+  background: transparent;
+}
+.event-text{
+  color: @primary-color;
+}
+.event-text::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f0a1";
+  margin-right: 8px;
+}
+h2.event-text {
+  margin-bottom: 25px;
+  margin-top: 0px;
+}
+@media screen and (max-width: 1099px) {
+  .countdown-container {
+    display: none;
+  }
+}
