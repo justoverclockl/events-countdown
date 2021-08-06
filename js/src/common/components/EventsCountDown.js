@@ -40,8 +40,15 @@ export default class EventsCountDown extends Widget {
                 minutes_span.innerHTML = ('0' + t.minutes).slice(-2);
                 seconds_span.innerHTML = ('0' + t.seconds).slice(-2);
 
-                if (t.total <= 0) {
+                if (t.total < 0) {
                     clearInterval(timeinterval);
+                    if (document.getElementById('titleEvent')) {
+                      var elem = document.getElementById('titleEvent');
+                      elem.parentNode.removeChild(elem);
+                    }
+                    var finishText = app.translator.trans('justoverclock-events-countdown.forum.endDateText');
+                    var finishDiv = document.getElementById('clockdiv');
+                    finishDiv.innerHTML = '<h1 class="letterpress">' + finishText + '</h1>';
                 }
             }
             update_clock();
@@ -72,12 +79,26 @@ export default class EventsCountDown extends Widget {
         const wgEvents = app.forum.attribute('event_title') || 'The new "event" is near!! We start in...';
         return (
             <div class="countdown-container">
-                <h2 class="event-text">{wgEvents}</h2>
+                <h2 class="event-text" id="titleEvent">
+                    {wgEvents}
+                </h2>
                 <div id="clockdiv">
-                    <div class="cntdwn-widget"><span class="days"></span><div class="smalltext">{wgDays}</div></div>
-                    <div class="cntdwn-widget"><span class="hours"></span><div class="smalltext">{wgHours}</div></div>
-                    <div class="cntdwn-widget"><span class="minutes"></span><div class="smalltext">{wgMinutes}</div></div>
-                    <div class="cntdwn-widget"><span class="seconds"></span><div class="smalltext">{wgSeconds}</div></div>
+                    <div class="cntdwn-widget">
+                        <span class="days"></span>
+                        <div class="smalltext">{wgDays}</div>
+                    </div>
+                    <div class="cntdwn-widget">
+                        <span class="hours"></span>
+                        <div class="smalltext">{wgHours}</div>
+                    </div>
+                    <div class="cntdwn-widget">
+                        <span class="minutes"></span>
+                        <div class="smalltext">{wgMinutes}</div>
+                    </div>
+                    <div class="cntdwn-widget">
+                        <span class="seconds"></span>
+                        <div class="smalltext">{wgSeconds}</div>
+                    </div>
                 </div>
             </div>
         );

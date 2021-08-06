@@ -14,21 +14,21 @@ import registerWidget from '../common/registerWidget';
 app.initializers.add('justoverclock/events-countdown', () => {
     registerWidget(app);
     app.extensionData
-      .for('justoverclock-events-countdown')
-      .registerSetting({
-        setting: 'justoverclock-events-countdown.countdownEndTime',
-        name: 'countdownEndTime',
-        label: app.translator.trans('justoverclock-events-countdown.admin.endTime'),
-        help: app.translator.trans('justoverclock-events-countdown.admin.endTime-help'),
-        placeholder: 'Dec 24 2021 00:00',
-        type: 'text',
-    })
-      .registerSetting({
-        setting: 'justoverclock-events-countdown.event_title',
-        name: 'event_title',
-        label: app.translator.trans('justoverclock-events-countdown.admin.evTitle'),
-        help: app.translator.trans('justoverclock-events-countdown.admin.evTitle-help'),
-        placeholder: 'Waiting Christmas!',
-        type: 'text',
-      });
+        .for('justoverclock-events-countdown')
+        .registerSetting({
+            setting: 'justoverclock-events-countdown.countdownEndTime',
+            name: 'countdownEndTime',
+            label: app.translator.trans('justoverclock-events-countdown.admin.endTime'),
+            help: app.translator.trans('justoverclock-events-countdown.admin.endTime-help'),
+            placeholder: 'Dec 24 2021 00:00',
+            type: 'text',
+        })
+        .registerSetting({
+            setting: 'justoverclock-events-countdown.event_title',
+            name: 'event_title',
+            label: app.translator.trans('justoverclock-events-countdown.admin.evTitle'),
+            help: app.translator.trans('justoverclock-events-countdown.admin.evTitle-help'),
+            placeholder: 'Waiting Christmas!',
+            type: 'text',
+        });
 });

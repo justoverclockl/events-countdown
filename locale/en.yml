@@ -10,5 +10,6 @@ justoverclock-events-countdown:
     hours: Hours
     minutes: Minutes
     seconds: Seconds
+    endDateText: The event has started!
 
 
