@@ -25,5 +25,7 @@ return [
     new Extend\Locales(__DIR__.'/locale'),
     (new Extend\Settings)
         ->serializeToForum('countdownEndTime', 'justoverclock-events-countdown.countdownEndTime')
-        ->serializeToForum('event_title', 'justoverclock-events-countdown.event_title'),
+        ->serializeToForum('event_title', 'justoverclock-events-countdown.event_title')
+        ->serializeToForum('fontawesome_events_icon', 'justoverclock-events-countdown.fontawesome_events_icon'),
+
 ];

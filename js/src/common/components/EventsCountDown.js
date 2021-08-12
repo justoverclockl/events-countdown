@@ -66,22 +66,16 @@ export default class EventsCountDown extends Widget {
         return 'fas fa-stopwatch-20';
     }
 
-    /*title() {
-    // We do not want title at moment
-    return app.translator.trans('justoverclock-events-countdown.forum.widget-title');
-  }*/
-
     content() {
         const wgDays = app.translator.trans('justoverclock-events-countdown.forum.days');
         const wgHours = app.translator.trans('justoverclock-events-countdown.forum.hours');
         const wgMinutes = app.translator.trans('justoverclock-events-countdown.forum.minutes');
         const wgSeconds = app.translator.trans('justoverclock-events-countdown.forum.seconds');
         const wgEvents = app.forum.attribute('event_title') || 'The new "event" is near!! We start in...';
+        const fontAwIcon = app.forum.attribute('fontawesome_events_icon') || 'fas fa-bullhorn';
         return (
             <div class="countdown-container">
-                <h2 class="event-text" id="titleEvent">
-                    {wgEvents}
-                </h2>
+                <h2 class="event-text" id="titleEvent"><i class={fontAwIcon + " " + 'fontawicon'}></i>{wgEvents}</h2>
                 <div id="clockdiv">
                     <div class="cntdwn-widget">
                         <span class="days"></span>

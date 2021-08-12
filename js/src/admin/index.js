@@ -30,5 +30,13 @@ app.initializers.add('justoverclock/events-countdown', () => {
             help: app.translator.trans('justoverclock-events-countdown.admin.evTitle-help'),
             placeholder: 'Waiting Christmas!',
             type: 'text',
+        })
+        .registerSetting({
+            setting: 'justoverclock-events-countdown.fontawesome_events_icon',
+            name: 'fontawesome_events_icon',
+            label: app.translator.trans('justoverclock-events-countdown.admin.fontaw'),
+            help: app.translator.trans('justoverclock-events-countdown.admin.fontaw-help'),
+            placeholder: 'fas fa-bullhorn',
+            type: 'text',
         });
 });
